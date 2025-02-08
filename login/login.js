@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
           }));
 
           // Redirect to logged page after successful login
-          window.location.href = "/logged.html";
+          window.location.href = "/home.html";
         })
         .catch((error) => {
           console.error("Error signing in:", error.message);
