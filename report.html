@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Incident - HerSafeWay</title>
+    <link rel="stylesheet" href="report.css">
+</head>
+<body class="report-page">
+
+    <!-- Header -->
+    <header class="header-report">
+        <img src="logo.png" alt="HerSafeWay Logo" class="logo-report">
+        <h1>Report an Incident</h1>
+    </header>
+
+    <!-- Report Form -->
+    <section class="report-container">
+        <form id="reportForm" action="success.html">
+            
+            <!-- Report Type -->
+            <label for="reportType">Incident Type:</label>
+            <select id="reportType" name="reportType" required>
+                <option value="">Select Incident Type</option>
+                <option value="harassment">Sexual Harassment</option>
+                <option value="stalking">Stalking</option>
+                <option value="assault">Physical Assault</option>
+                <option value="suspicious">Suspicious Activity</option>
+                <option value="unsafe_area">Unsafe Area</option>
+            </select>
+
+            <!-- Location Input -->
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter location or use GPS" required>
+            <button type="button" class="gps-btn" onclick="getLocation()">📍 Use My Location</button>
+
+            <!-- Date & Time Selection -->
+            <label for="dateTime">Date & Time of Incident:</label>
+            <input type="datetime-local" id="dateTime" name="dateTime" required>
+
+            <!-- Description Box -->
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" placeholder="Describe what happened..." required></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Report</button>
+        </form>
+    </section>
+
+    <script src="report.js"></script>
+</body>
+</html>
