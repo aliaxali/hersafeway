@@ -8,13 +8,13 @@ const db = firebase.firestore();
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
-            function (position) {
-                let lat = position.coords.latitude;
-                let lon = position.coords.longitude;
-                document.getElementById("location").value = `Latitude: ${lat}, Longitude: ${lon}`;
+            (position) => {
+                const latitude = position.coords.latitude;
+                const longitude = position.coords.longitude;
+                document.getElementById("location").value = `Lat: ${latitude}, Lng: ${longitude}`;
             },
-            function (error) {
-                alert("Unable to retrieve location. Please enter manually.");
+            (error) => {
+                alert("Location access denied. Please enable GPS.");
             }
         );
     } else {
