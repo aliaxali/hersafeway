@@ -1,0 +1,79 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe6f2; /* Light pink */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.security-header {
+    background-color: #ff4d94; /* Dark pink */
+    color: white;
+    padding: 20px;
+    font-size: 22px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-btn {
+    background-color: #ff3385;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: #ff1a75;
+}
+
+.security-container {
+    margin: 20px auto;
+    width: 80%;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.safety-tips, .what-to-do {
+    text-align: left;
+    padding: 15px;
+}
+
+.safety-tips h2, .what-to-do h2 {
+    color: #ff3385;
+}
+
+.safety-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.safety-tips li {
+    background: #fff5f8;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border-left: 5px solid #ff3385;
+}
+
+.situation {
+    background: #fff5f8;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #ff3385;
+    text-align: left;
+}
+
+.situation h3 {
+    color: #ff3385;
+}

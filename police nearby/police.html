@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearby Police Stations | HerSafeWay</title>
+    <link rel="stylesheet" href="police.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+</head>
+<body>
+
+    <header class="police-header">
+        <h1>Nearby Police Stations</h1>
+        <p>Find the nearest police stations based on your location</p>
+    </header>
+
+    <nav class="nav-bar">
+        <a href="home.html" class="nav-btn transport-btn">🏠 Home</a>
+        <button class="locate-btn" onclick="findPoliceStations()">📍 Locate Nearest Police Stations</button>
+    </nav>
+
+    <div class="police-container">
+        <div id="map"></div>
+        <div id="police-info"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="police.js"></script>
+
+</body>
+</html>
