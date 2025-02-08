@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerSafeWay - Your Safe Travel Companion</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+</head>
+<body class="homepage">
+
+    <!-- Navigation Bar -->
+    <header class="header-home">
+        <img src="logo.png" alt="HerSafeWay Logo" class="logo-home">
+        <nav class="nav-home">
+            <button class="nav-btn report-btn" onclick="location.href='report.html'">Report Incident</button>
+            <button class="nav-btn transport-btn" onclick="location.href='transport.html'">Police Nearby</button>
+            <button class="nav-btn resources-btn" onclick="location.href='resources.html'">Security Guide</button>
+            <button class="nav-btn logout-btn" onclick="logout()">Logout</button>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container-home">
+        <!-- Left Section: Search & Safety Info -->
+        <section class="left-section-home">
+            <h1>Welcome to <span class="brand-name">HerSafeWay</span></h1>
+            <p>Your safety is our priority. Plan your journey with real-time safe routes.</p>
+
+            <div class="search-container-home">
+                <input type="text" id="location" placeholder="Enter your destination...">
+                <button class="search-btn-home" onclick="searchRoute()">Find Safe Route</button>
+            </div>
+
+            <div class="info-box-home">
+                <h2>Stay Informed</h2>
+                <p>Check real-time crime reports, community alerts, and safe zones in your area.</p>
+            </div>
+        </section>
+
+        <!-- Right Section: Map -->
+        <section class="right-section-home">
+            <div id="map"></div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="home.js"></script>
+
+</body>
+</html>
