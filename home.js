@@ -14,6 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Logout Function
     window.logout = function () {
         alert("You have successfully logged out.");
-        window.location.href = "login.html"; // Redirect to login page
+        window.location.href = "/login/login.html"; // Redirect to login page
     };
 });

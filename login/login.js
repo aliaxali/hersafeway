@@ -1,5 +1,5 @@
 // Import Firebase SDKs
-import { firebaseConfig } from './firebase_credentials.js';
+import { firebaseConfig } from '../firebase_credentials.js';
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-analytics.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword ,
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     alert("Login Successful!");
                     console.log("Logged in user:", userCredential.user);
                     // Redirect user to dashboard or homepage
-                    window.location.href = "home.html"; 
+                    window.location.href = "/home.html"; 
                 })
                 .catch((error) => {
                     alert("Login Failed: " + error.message);
