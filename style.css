@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Replace with your Figma font */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Replace with your Figma text color */
+    background-color: #f9f9f9; /* Replace with your Figma background color */
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff; /* Replace with your Figma header color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    height: 60px; /* Adjust based on your Figma design */
+  }
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333; /* Replace with your Figma link color */
+    font-weight: bold;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #007bff; /* Replace with your Figma hero background color */
+    color: white; /* Replace with your Figma hero text color */
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero button {
+    padding: 10px 20px;
+    background-color: #ff4081; /* Replace with your Figma button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #ffffff; /* Replace with your Figma features background color */
+  }
+  
+  .feature {
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .feature img {
+    height: 50px; /* Adjust based on your Figma design */
+    margin-bottom: 20px;
+  }
+  
+  .feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    color: #666; /* Replace with your Figma feature text color */
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Replace with your Figma footer color */
+    color: white;
+  }
+  /* Community Reporting Section */
+.report {
+    padding: 50px 20px;
+    background-color: #f4f4f4; /* Replace with your Figma background color */
+    text-align: center;
+  }
+  
+  .report h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  #reportForm {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  #reportForm input,
+  #reportForm textarea,
+  #reportForm select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  #reportForm textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  #reportForm button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Replace with your Figma button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  #reportForm button:hover {
+    background-color: #0056b3;
+  }

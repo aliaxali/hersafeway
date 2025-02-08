@@ -1,0 +1,40 @@
+<!-- logged.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="hsw2.png" alt="Logo" class="logo" height="80px">
+  </header>
+
+  <main>
+    <h1>Welcome, <span id="userName"></span>!</h1>
+    <p>Email: <span id="userEmail"></span></p>
+    <img id="userProfilePicture" alt="User Profile Picture" style="width: 100px; height: 100px; border-radius: 50%;" />
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Hersafeway. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Load user details from localStorage and update the profile
+    document.addEventListener("DOMContentLoaded", function () {
+      const user = JSON.parse(localStorage.getItem("user"));
+
+      if (user) {
+        document.getElementById("userName").textContent = user.displayName;
+        document.getElementById("userEmail").textContent = user.email;
+        document.getElementById("userProfilePicture").src = user.photoURL;
+      } else {
+        console.error("User not found in localStorage.");
+      }
+    });
+  </script>
+</body>
+</html>
