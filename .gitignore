@@ -1,3 +1,4 @@
 # .gitignore
 
 firebase_credentials.js
+node_modules
