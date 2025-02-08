@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8c8dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Login Container */
+.login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 350px;
+    position: relative;
+}
+
+/* Logo */
+.logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Brand Name */
+.brand-name {
+    color: #d63384;
+    font-weight: bold;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #d63384;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+/* Login & Signup Buttons */
+#login_btn {
+    background-color: #d63384;
+    color: white;
+}
+
+#signup_btn {
+    background-color: #e85a92;
+    color: white;
+}
+
+/* Google Button */
+#google_btn {
+    background-color: white;
+    color: #555;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.google-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* Button Hover Effects */
+button:hover {
+    opacity: 0.85;
+}
+
+/* Women Safety Highlight */
+.safety-note {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    font-style: italic;
+}

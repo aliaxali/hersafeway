@@ -1,14 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Redirect users when they click buttons
-    document.getElementById("getStarted").addEventListener("click", function () {
-        window.location.href = "report.html"; // Redirect to Report Incident page
-    });
+    let getStartedBtn = document.getElementById("getStarted");
+    if (getStartedBtn) {
+        getStartedBtn.addEventListener("click", function () {
+            window.location.href = "login.html"; // Redirect to Login page
+        });
+    }
 
-    document.getElementById("reportIncident").addEventListener("click", function () {
-        window.location.href = "report.html";
-    });
+    let reportIncidentBtn = document.getElementById("reportIncident");
+    if (reportIncidentBtn) {
+        reportIncidentBtn.addEventListener("click", function () {
+            window.location.href = "report.html";
+        });
+    }
 
-    document.getElementById("nearbyPolice").addEventListener("click", function () {
-        window.location.href = "police.html";
-    });
+    let nearbyPoliceBtn = document.getElementById("nearbyPolice");
+    if (nearbyPoliceBtn) {
+        nearbyPoliceBtn.addEventListener("click", function () {
+            window.location.href = "police.html";
+        });
+    }
 });
