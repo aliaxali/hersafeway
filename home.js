@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Redirect to saferoute.html when clicking "Find Safe Route"
     window.searchRoute = function () {
-        window.location.href = "saferoute.html";
+        window.location.href = "route.html";
     };
 
     // Logout Function
