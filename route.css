@@ -25,3 +25,24 @@ input, button {
     height: 500px; /* Ensure the map has a height */
     border: 1px solid #ccc;
 }
+/* Back to Home Button Styling */
+.back-button-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.back-button {
+    background-color: #d63384;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #a62668;
+}
+
