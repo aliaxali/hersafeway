@@ -57,8 +57,6 @@ https://drive.google.com/drive/u/1/folders/153a7aGPVe0iQiU-_Bt1iAEU91_JztC9T
 ### Video
 [Demo Video](#) *(Add your demo video link here with explanation)*
 
-### Additional Demos
-[Other demo materials/links](#) *(If available, add extra demos)*
 
 ---
 ## 👥 Team Contributions
