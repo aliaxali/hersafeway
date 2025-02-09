@@ -1,0 +1,46 @@
+/* Success Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8c8dc; /* Match home page background */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #d63384; /* Match title color with home page */
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+.submit-btn {
+    background-color: #d63384; /* Same as other buttons */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.submit-btn:hover {
+    background-color: #b42a70; /* Slightly darker shade */
+}
+
+footer {
+    background-color: white;
+    padding: 10px;
+    color: #333;
+    font-size: 14px;
+}
