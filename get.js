@@ -20,4 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = "police.html";
         });
     }
+
+    let securityguideBtn = document.getElementById("securityguide");
+    if (securityguideBtn) {
+        securityguideBtn.addEventListener("click", function () {
+            window.location.href = "security.html";
+        });
+    }
 });
