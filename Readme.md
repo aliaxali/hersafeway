@@ -8,7 +8,7 @@
 - **Nandana K** - Model Engineering College  
 
 ## Hosted Project Link
-[HerSafeWay Live Demo](#) *(Add your live project link here)*
+https://67a831435fca592c81e1a10d--stunning-sundae-dee826.netlify.app/
 
 ---
 ## 📌 Project Description
@@ -48,19 +48,9 @@ cd hersafeway
 
 ---
 ## 📸 Project Documentation
-### Screenshots
-#### 1️⃣ Home Page
-![Home Page](#) *(Add screenshot 1 with description here)*
+### Screenshots and  System Workflow
+https://drive.google.com/drive/u/1/folders/153a7aGPVe0iQiU-_Bt1iAEU91_JztC9T
 
-#### 2️⃣ Route Display
-![Route Display](#) *(Add screenshot 2 with description here)*
-
-#### 3️⃣ Safe Route with Crime Zones
-![Safe Route](#) *(Add screenshot 3 with description here)*
-
-### Diagrams
-#### 🔍 System Workflow
-![Workflow Diagram](#) *(Add workflow/architecture diagram with explanation here)*
 
 ---
 ## 🎬 Project Demo
