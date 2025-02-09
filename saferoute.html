@@ -1,66 +1,70 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Find Safe Route</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Route Finder</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
     <style>
-        body { margin: 0; padding: 0; }
-        #map { width: 100%; height: 90vh; }
-        #controls { padding: 10px; text-align: center; }
+        body { margin: 0; padding: 0; text-align: center; font-family: Arial, sans-serif; }
+        #map { width: 100%; height: 80vh; }
+        input, button { margin: 5px; padding: 10px; font-size: 16px; }
     </style>
 </head>
-
 <body>
-    <div id="controls">
-        <input type="text" id="start_location" placeholder="Enter start location">
-        <input type="text" id="end_location" placeholder="Enter destination">
-        <button onclick="findSafeRoute()">Find Route</button>
-    </div>
+
+    <h2>Find the Safest Route</h2>
+    <input type="text" id="start_location" placeholder="Enter Start Location" />
+    <input type="text" id="destination" placeholder="Enter Destination" />
+    <button onclick="findSafeRoute()">Find Route</button>
+
     <div id="map"></div>
 
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
 
     <script>
-        var map = L.map('map').setView([20.5937, 78.9629], 5);
+        var map = L.map('map').setView([20.5937, 78.9629], 5); // Default to India
+
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: 'Map data &copy; OpenStreetMap contributors'
+            attribution: '© OpenStreetMap contributors'
         }).addTo(map);
 
-        var routingControl; // Store the routing control instance
+        let routeControl = null; // Store routing instance
 
+        // Function to get coordinates from a location name
         async function getCoordinates(location) {
-            let response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(location)}`);
+            let response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${location}`);
             let data = await response.json();
             return data.length > 0 ? [parseFloat(data[0].lat), parseFloat(data[0].lon)] : null;
         }
 
+        // Function to find and display the route
         async function findSafeRoute() {
             let startLocation = document.getElementById("start_location").value;
-            let endLocation = document.getElementById("end_location").value;
+            let destination = document.getElementById("destination").value;
 
-            if (!startLocation || !endLocation) {
+            if (!startLocation || !destination) {
                 alert("Please enter both start and destination locations.");
                 return;
             }
 
             let startCoords = await getCoordinates(startLocation);
-            let endCoords = await getCoordinates(endLocation);
+            let endCoords = await getCoordinates(destination);
 
             if (!startCoords || !endCoords) {
                 alert("Could not find one of the locations. Try again.");
                 return;
             }
 
-            // Remove previous route if exists
-            if (routingControl) {
-                map.removeControl(routingControl);
+            // Remove existing route if present
+            if (routeControl) {
+                map.removeControl(routeControl);
             }
 
-            // Add new route
-            routingControl = L.Routing.control({
+            // Add new route to the map
+            routeControl = L.Routing.control({
                 waypoints: [
                     L.latLng(startCoords[0], startCoords[1]),
                     L.latLng(endCoords[0], endCoords[1])
@@ -69,6 +73,6 @@
             }).addTo(map);
         }
     </script>
-</body>
 
+</body>
 </html>
