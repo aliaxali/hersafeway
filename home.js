@@ -5,11 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    function searchRoute() {
-        var location = document.getElementById("location").value;
-        console.log("Searching safest routes for:", location);
-        // API integration can be added here
-    }
+    // Redirect to saferoute.html when clicking "Find Safe Route"
+    window.searchRoute = function () {
+        window.location.href = "saferoute.html";
+    };
 
     // Logout Function
     window.logout = function () {
